@@ -10,7 +10,7 @@ html {
     padding: 0;
     margin: 0; /* Removes default margin */
     width: 100%; /* Ensures full width of the section */
-    background: rgb(19, 20, 56);
+    background: rgb(42, 43, 87);
     
 
 }
@@ -67,7 +67,7 @@ html {
 body
 {
     color: #ededed;
-    background: rgb(7, 7, 28);
+    background: rgb(22, 31, 59);
 }
 .header
 {
@@ -106,7 +106,7 @@ body
 
 .navbar .logo {
     font-size: 28px; /* Increases the logo size for emphasis */
-    color: rgb(34, 255, 78);
+    color: rgb(245, 245, 245);
     text-decoration: none;
     font-weight: bold;
     transition: 0.7s;
@@ -288,7 +288,7 @@ body
 
 
 #services {
-    color: rgb(114, 3, 3);
+    color: ff6f00;
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
@@ -333,7 +333,7 @@ body
     pointer-events: none;
     background: linear-gradient(
         to right,
-        rgb(0, 3, 77) 0%,
+        rgb(22, 31, 59) 0%,
         rgba(255, 255, 255, 0) 100%
     );
 }
@@ -346,7 +346,7 @@ body
     right: 0; /* Right side fade */
     background: linear-gradient(
         to left,
-        rgb(19, 20, 56) 0%,
+        rgb(22, 31, 59) 0%,
         rgba(255, 255, 255, 0) 100%
     );
 }
@@ -383,7 +383,7 @@ body
 
 .services-list div p {
     font-size: 18px;
-    color: #ff8000;
+    color: #ffffff;
     line-height: 1.4;
     margin: 0;
     text-align: left;
@@ -391,7 +391,7 @@ body
 }
 .services-list div p1 {
     font-size: 18px;
-    color: #0ef08e;
+    color: #ffffff;
     line-height: 1.4;
     margin: 0;
     text-align: left;
@@ -399,7 +399,7 @@ body
 }
 .services-list div p2 {
     font-size: 22px;
-    color: #ff0095;
+    color: #ffffff;
     line-height: 1.4;
     text-align: left;
     font-weight: bolder;
@@ -431,7 +431,7 @@ body
     background: #ff6f00;
     border-radius: 40px;
     font-size: 16px;
-    color: rgb(39, 232, 253);
+    color: rgb(19, 20, 56);
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
@@ -475,126 +475,10 @@ section
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
 }
-.bar
-{
-    font-size: 23px;
-}
-.Technical-bars .bar 
-{
-    margin-top: 40px 0;
-}
-.Technical-bars .bar:first-child
-{
-    margin-top: 0;
-}
-.Technical-bars .bar:last-child
-{
-    margin-bottom: 0;
-}
-.Technical-bars .bar .info
-{
-    margin-bottom: 5px;
-}
-.Technical-bars .bar .info span
-{
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
-}
-.Technical-bars .bar .progress-line {
-    position: relative;
-    border-radius: 10px;
-    width: 100%;
-    height: 5px;
-    background-color: rgb(255, 255, 255);
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
 @keyframes animate {
     100% {
         transform: scaleX(1);
     }
-}
-
-.Technical-bars .bar .progress-line span {
-    height: 100%;
-    background-color: #ff6f00;
-    position: absolute;
-    border-radius: 10px;
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-.progress-line.html span {
-    width: 90%;
-}
-
-.progress-line.css span {
-    width: 80%;
-}
-
-.progress-line.javascript span {
-    width: 65%;
-}
-
-.progress-line.python span {
-    width: 85%;
-}
-
-.progress-line.php span {
-    width: 75%;
-}
-.progress-line span::after
-{
-    position:absolute;
-    padding: 1px 8px;
-    background-color: #000;
-    color:#fff;
-    font-size: 12px;
-    border-radius: 3px;
-    top: -28px;
-    right: -20px;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-.progress-line.html span::after
-{
-    content: 90%;
-}
-.progress-line.css span::after
-{
-    content: 80%;
-}
-.progress-line.javascript span::after
-{
-    content: 65%;
-}
-.progress-line.python span::after
-{
-    content: 85%;
-}
-.progress-line.php span::after
-{
-    content: 75%;
-}
-.progress-line span::before
-{
-    content:"";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #000;
-    top: -10px;
-    right: 0;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
 }
 @keyframes showText {
     100%{
