@@ -9,149 +9,218 @@
   <!-- Site Metas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Amaan Ahmad | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Add Font Awesome for more icon options -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-    <section class="home">
+    <header>
         <nav class="navbar">
-            <a href="#" class="logo">Portfolio</a>
+            <a href="#" class="logo">P<span>ortfolio</span></a>
             <div class="nav-links">
-                <a href="#" style="--i:1" class="active">Home</a>
-                <a href="#" style="--i:2">About</a>
-                <a href="#" style="--i:3">Skill</a>
-                <a href="#" style="--i:4">Portfolio</a>
-                <a href="#" style="--i:5">Contact</a>
+                <a href="#home" style="--i:1" class="active">Home</a>
+                <a href="#about" style="--i:2">About</a>
+                <a href="#skills" style="--i:3">Skills</a>
+                <a href="#portfolio" style="--i:4">Portfolio</a>
+                <a href="#contact" style="--i:5">Contact</a>
+            </div>
+            <div class="menu-toggle">
+                <i class='bx bx-menu'></i>
             </div>
         </nav>
-        
+    </header>
+
+    <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Amaan Ahmad Ansari
-                
-            </h1>
-            <h3>And I'm a <span class="text"></span></h3>
+            <h3>Hello, I'm</h3>
+            <h1>Amaan Ahmad Ansari</h1>
+            <h3>A <span class="text"></span></h3>
             <p>
-                I'm a software developer with extensive experience for 3 year.
+                Software developer with 3 years of extensive experience.
                 <br>
-                Expertise in website design, Frontend design, and many more.
+                Expertise in website design, frontend development, and more.
             </p>
             <div class="home-sci">
                 <a href="https://www.facebook.com/profile.php?id=100014140697153" target="_blank" style="--i:7"><i class='bx bxl-facebook'></i></a>
                 <a href="https://www.instagram.com/amaan.ahmad_7/" target="_blank" style="--i:8"><i class='bx bxl-instagram'></i></a>
-                <a href="https://wa.me/+917348100264?text=Hello%20Amaan!%20I%20want%20to%20connect%20with%20you.
-                " target="_blank" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://wa.me/+917348100264?text=Hello%20Amaan!%20I%20want%20to%20connect%20with%20you." target="_blank" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
                 <a href="https://www.linkedin.com/in/amaanahmad007/" target="_blank" style="--i:10"><i class='bx bxl-linkedin'></i></a>
             </div>
             <a href="#about" class="btn-box">More About Me</a>
         </div>
         <div class="home-image">
-            <img src="pp.png" alt="Amaan Ahmad Ansari">
+            <div class="img-box">
+                <img src="pp.png" alt="Amaan Ahmad Ansari">
+            </div>
         </div>
     </section>
-    
-
 
     <section class="about" id="about">
-
+        <div class="about-img">
+            <img src="IMG_3353.jpg" alt="About Me">
+        </div>
         <div class="about-text">
             <h2>About <span>Me</span></h2>
             <h4>Software Engineer</h4>
-            <p>I am a passionate BCA graduate with a strong foundation in web development, app development, data analysis, and programming. My academic journey and hands-on projects have equipped me with the technical expertise and problem-solving skills needed to build innovative and user-friendly solutions.
-
-                I thrive on exploring new technologies and transforming ideas into impactful digital experiences. Whether it's designing a responsive website, developing an application, or analyzing data to uncover insights, I approach every challenge with curiosity and dedication.
-            </p>
+            <p>I am a passionate BCA graduate with a strong foundation in web development, app development, data analysis, and programming. My academic journey and hands-on projects have equipped me with the technical expertise and problem-solving skills needed to build innovative and user-friendly solutions.</p>
+            <p>I thrive on exploring new technologies and transforming ideas into impactful digital experiences. Whether it's designing a responsive website, developing an application, or analyzing data to uncover insights, I approach every challenge with curiosity and dedication.</p>
+            <div class="about-stats">
+                <div class="stat">
+                    <span>3+</span>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat">
+                    <span>10+</span>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat">
+                    <span>5+</span>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
             <a href="Aman CV.pdf" download="" class="btn-box">Download CV</a>
         </div>
     </section>
 
+    <section class="skills" id="skills">
+        <div class="container">
+            <h1 class="sub-title">My <span>Skills</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class='fas fa-code' style='color:#00e1ff'></i>
+                    <h2>Web Development</h2>
+                    <p>I have strong expertise in web development, covering both frontend and backend aspects. My skills include:</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3/SCSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div>
+                    <i class='fas fa-chart-line' style='color:#00e1ff'></i>
+                    <h2>Data Analytics</h2>
+                    <p>I have a strong foundation in data analysis and visualization, with expertise in:</p>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Power BI</li>
+                        <li>Excel</li>
+                    </ul>
+                </div>
+                <div>
+                    <i class='fas fa-laptop-code' style='color:#00e1ff'></i>
+                    <h2>Programming</h2>
+                    <p>I have experience in multiple programming languages, allowing me to tackle a variety of development challenges:</p>
+                    <ul>
+                        <li>C</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section>
-        <div class="services" id="services">
-            <div class="container">
-                <h1 class="sub-title">My <span>Skills</span></h1>
-                <div class="services-list">
-                    <!-- Original Content -->
-                    <div>
-                        <i class='bx bx-crop' style='color:#ff6f00'></i>
-                        <h2>Web Development</h2>
-                        <p1>I have strong expertise in web development, covering both frontend and backend aspects. My skills include:</p1>
-                        <p2>                            
-                            1. HTML<br>
-                            2. CSS<br>
-                            3. JavaScript</p2>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">My <span>Portfolio</span></h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="data">Data</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="project1.jpg" alt="Project 1">
                     </div>
-                    <div>
-                        <i class='bx bxl-apple' style='color:#ff6f00'></i>
-                        <h2>Data Analytics</h2>
-                        <p>I have a strong foundation in data analysis and visualization, with expertise in:<br>
-
-                            1. Python<br>
-                            2. SQL<br>
-                            3. Power BI<br>
-                            4. Excel</p>
+                    <div class="portfolio-info">
+                        <h3>E-commerce Website</h3>
+                        <p>Web Development</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
-                    <div>
-                        <i class='bx bxl-apple' style='color:#ff6f00'></i>
-                        <h2>Programming</h2>
-                        <p>I have experience in multiple programming languages, allowing me to tackle a variety of development challenges:<br>
-
-                            1. C <br>
-                            2. Python<br>
-                            3. Java<br>
-                            4. PHP</p>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-img">
+                        <img src="project2.jpg" alt="Project 2">
                     </div>
-    
-                    <!-- Duplicate Content -->
-                    <div>
-                        <i class='bx bx-crop' style='color:#ff6f00'></i>
-                        <h2>Web Development</h2>
-                        <p>I have strong expertise in web development, covering both frontend and backend aspects. My skills include:<br>
-
-                            1. HTML<br>
-                            2. CSS<br>
-                            3. JavaScript</p>
+                    <div class="portfolio-info">
+                        <h3>Mobile App</h3>
+                        <p>App Development</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
-                    <div>
-                        <i class='bx bxl-apple' style='color:#ff6f00'></i>
-                        <h2>Data Analytics</h2>
-                        <p>I have a strong foundation in data analysis and visualization, with expertise in:<br>
-
-                            1. Python<br>
-                            2. SQL<br>
-                            3. Power BI<br>
-                            4. Excel</p>
+                </div>
+                <div class="portfolio-item" data-category="data">
+                    <div class="portfolio-img">
+                        <img src="project3.jpg" alt="Project 3">
                     </div>
-                    <div>
-                        <i class='bx bxl-apple' style='color:#ff6f00'></i>
-                        <h2>Programming</h2>
-                        <p>I have experience in multiple programming languages, allowing me to tackle a variety of development challenges:<br>
-
-                            1. C <br>
-                            2. Python<br>
-                            3. Java<br>
-                            4. PHP</p>
+                    <div class="portfolio-info">
+                        <h3>Data Visualization</h3>
+                        <p>Data Analytics</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-        
-        
 
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact <span>Me</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>contact@amaanahmad.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+91 7348100264</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>India</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-box">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    
-    
-
-
-       
-
-
-
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Amaan Ahmad Ansari. All Rights Reserved</p>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/profile.php?id=100014140697153" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/amaan.ahmad_7/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/amaanahmad007/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="main.js"></script>
 </body>
