@@ -757,3 +757,138 @@ footer {
         opacity: 1;
     }
 }
+
+
+/* Media Queries for Responsive Design */
+
+/* Large Devices (Desktops) */
+@media screen and (max-width: 1200px) {
+    section {
+        padding: 100px 5% 70px;
+    }
+    
+    header {
+        padding: 20px 5%;
+    }
+    
+    .home-content h1 {
+        font-size: 48px;
+    }
+    
+    .home-content h3 {
+        font-size: 24px;
+    }
+    
+    .img-box, .about-box {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media screen and (max-width: 991px) {
+    /* REPLACE ONLY THIS SECTION with your new navigation code */
+    /* Navigation changes for tablet and mobile */
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .menu-toggle i {
+        color: var(--text-color);
+    }
+    
+    .navbar {
+        position: relative;
+    }
+    
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 20px 5%;
+        background: rgba(10, 17, 40, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease, padding 0.5s ease;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .nav-links.active {
+        max-height: 300px; /* Adjust based on your menu height */
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    /* KEEP THE REST OF THE 991px MEDIA QUERY */
+    /* Home section adjustments */
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .home-content {
+        max-width: 100%;
+    }
+    
+    .home-sci {
+        justify-content: center;
+    }
+    
+    /* About section adjustments */
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-img {
+        margin: 0 auto 40px;
+    }
+    
+    .about-text h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .about-stats {
+        justify-content: center;
+    }
+    
+    /* Contact adjustments */
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small Devices (Mobile Phones) */
+@media screen and (max-width: 768px) {
+    /* Keep all the small device styles */
+    section {
+        padding: 80px 5% 50px;
+    }
+    
+    .home-content h1 {
+        font-size: 36px;
+    }
+    
+    /* ...and so on... */
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 480px) {
+    /* Keep all the extra small device styles */
+    .home-content h1 {
+        font-size: 28px;
+    }
+    
+    /* ...and so on... */
+}

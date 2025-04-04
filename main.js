@@ -48,4 +48,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// Mobile Menu Toggle Function
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+
+    // Close menu when clicking a link (for better UX)
+    const navItems = document.querySelectorAll('.nav-links a');
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            if (window.innerWidth <= 991) {
+                navLinks.classList.remove('active');
+            }
+        });
+    });
+});
