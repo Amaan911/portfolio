@@ -301,16 +301,14 @@ header {
     position: relative;
 }
 
-.about-img::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.about-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 5%;
     border: 5px solid var(--accent-color);
-    top: -6px;
-    right: -5px;
-    z-index: 1;
-    border-radius: 10px;
+    box-shadow: 0 0 30px var(--shadow-color);
 }
 
 .about-img img {
@@ -320,6 +318,7 @@ header {
     position: relative;
     z-index: 2;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
 }
 
 .about-text {
