@@ -229,6 +229,12 @@ header {
     line-height: 1.6;
     margin: 20px 0 30px;
     animation: slideLeft 1s ease forwards;
+    text-align: justify;
+}
+.home-content p1{
+    font-size: 20px;
+    font-weight: bold;
+
 }
 
 .home-image {
@@ -251,6 +257,7 @@ header {
 .home-image img {
     width: 100%;
     object-fit: cover;
+
 }
 
 /* Home Social Icons */
